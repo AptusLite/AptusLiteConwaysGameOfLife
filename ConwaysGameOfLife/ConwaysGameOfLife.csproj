@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <PackageId>AptusLiteConwaysGameOfLife</PackageId>
+    <Authors>Brendan Price</Authors>
+    <Company>AptusLite</Company>
+    <Product>AptusLite - ConwaysGameOfLife</Product>
+    <Description>AptusLite - ConwaysGameOfLife</Description>
+    <PackageLicenseFile>gpl-3.0.txt</PackageLicenseFile>
+    <AssemblyName>AptusLiteConwaysGameOfLife</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\AppIcon.png" />
+    <None Remove="Images\CompanyLogo.png" />
+    <None Remove="Resources\Theme.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\AppIcon.png" />
+    <Resource Include="Images\CompanyLogo.png" />
+    <Resource Include="Resources\Theme.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

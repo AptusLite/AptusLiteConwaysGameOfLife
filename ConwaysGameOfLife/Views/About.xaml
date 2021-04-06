@@ -1,0 +1,64 @@
+﻿<!--
+   AptusLite - Conway's Game of Life Implementation
+   Copyright(C) 2021 - Brendan Price 
+
+   This program is free software: you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this program. If not, see<https://www.gnu.org/licenses/>
+    -->
+<Window x:Class="ConwaysGameOfLife.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ConwaysGameOfLife"
+        mc:Ignorable="d"
+        Icon="\images\AppIcon.png"
+        Background="Black"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize"
+        Title="AptusLite - Conway's Game Of Life Implementation" Height="585" Width="600">
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="4*"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" HorizontalAlignment="Center" Margin="20,0,20,20" >
+                <Image Source="\images\CompanyLogo.png"/>
+            </Label>
+            <TextBlock Foreground="White" Grid.Row="2" FontSize="14" TextAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap">
+                AptusLite - Conway's Game Of Life Implementation
+                <LineBreak/>
+                <LineBreak/>
+                Is an implementation by AptusLite, of the famous cellular automaton 'Conway's Game of Life',
+                devised by the British mathematician John Horton Conway 
+                <LineBreak/>
+                (26 December 1937 – 11 April 2020).
+                <LineBreak/>
+                <LineBreak/>
+                The rules are as follows:
+                <LineBreak/>
+                    - Any live cell with two or three live neighbours survives.
+                <LineBreak/>
+                    - Any dead cell with three live neighbours becomes a live cell.
+                <LineBreak/>
+                    - All other live cells die in the next generation. Similarly, all other dead cells stay dead.
+                <LineBreak/>
+                <LineBreak/>
+                See https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life for more information.
+                <LineBreak/>
+                See https://en.wikipedia.org/wiki/John_Horton_Conway also for more information about the mathematician.
+            </TextBlock>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,137 @@
+﻿   <!--
+   AptusLite - Conway's Game of Life Implementation
+   Copyright(C) 2021 - Brendan Price 
+
+   This program is free software: you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this program. If not, see<https://www.gnu.org/licenses/>
+    -->
+<Window x:Class="ConwaysGameOfLife.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ConwaysGameOfLife.ViewModels"
+        mc:Ignorable="d"
+        Icon="\images\AppIcon.png"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize"
+        Title="AptusLite - Conway's Game Of Life Implementation" Height="585" Width="600">
+
+    <Window.DataContext>
+        <local:ViewModelCells/>
+    </Window.DataContext>
+
+    <Border Background="RosyBrown" >
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="4*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="16*"/>
+            </Grid.RowDefinitions>
+            <Grid  Grid.Column="0" Grid.Row="4" Margin="5" Grid.ColumnSpan="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Button Content="START" Grid.Row="0"  Margin="5" Command="{Binding StartCmd}"/>
+                <Button Content="STEP" Grid.Row="1"  Margin="5" Command="{Binding StepCmd}"/>
+                <Button Content="PAUSE" Grid.Row="2" Margin="5" Command="{Binding PauseCmd}"/>
+                <Button Content="STOP" Grid.Row="3" Margin="5" Command="{Binding StopCmd}"/>
+                <Button Content="CLEAR" Grid.Row="4" Margin="5" Command="{Binding ClearCmd}"/>
+            </Grid>
+            <StackPanel Orientation="Vertical" Grid.Column="0" Grid.ColumnSpan="7">
+                <Menu >
+                    <MenuItem Header="Menu">
+                        <MenuItem Header="About" Command="{Binding AboutCmd}"/>
+                        <MenuItem Header="Exit" Command="{Binding ExitCmd}"/>
+                    </MenuItem>
+                </Menu>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Right">
+                <Label HorizontalAlignment="Center" VerticalAlignment="Center">Techno Colour:</Label>
+                <CheckBox IsChecked="{Binding TechnoColour}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Right">
+                <Label HorizontalAlignment="Center" VerticalAlignment="Center">Sound:</Label>
+                <CheckBox IsChecked="{Binding Sound}" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Bottom" Margin="0,0,0,5" >
+                <Label HorizontalAlignment="Center">Grid Size:</Label>
+                <Slider Value="{Binding CellByCell}" TickFrequency="5" IsSnapToTickEnabled="True" Minimum="5" Maximum="45" IsEnabled="{Binding GridSizeSliderEnabled}" />
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="2" VerticalAlignment="Bottom" Margin="0,0,0,5" >
+                <Label HorizontalAlignment="Center">Max Generation:</Label>
+                <TextBox x:Name="txtMaxGen" TextAlignment="Center" Margin="5, 0" Text="{Binding MaxGenerationNumber}" />
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="3" VerticalAlignment="Bottom" Margin="0,0,0,5">
+                <Label HorizontalAlignment="Center">Generation Num:</Label>
+                <TextBox x:Name="txtGenNum" TextAlignment="Center" Margin="5, 0" Text="{Binding GenerationNumber}" IsEnabled="False"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="4" VerticalAlignment="Bottom" Margin="0,0,0,5">
+                <Label HorizontalAlignment="Center">Population:</Label>
+                <TextBox x:Name="txtPopCount" TextAlignment="Center" Margin="5, 0" Text="{Binding PopulationCount}" IsEnabled="False"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="5" VerticalAlignment="Bottom" Margin="0,0,0,5">
+                <Label HorizontalAlignment="Center">State:</Label>
+                <TextBox x:Name="txtState" TextAlignment="Center" Margin="5, 0" Text="{Binding State}" IsEnabled="False"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="6" VerticalAlignment="Bottom" Margin="0,0,0,5">
+                <Label HorizontalAlignment="Center">Status:</Label>
+                <TextBox x:Name="txtStatus" TextAlignment="Center" Margin="5, 0" Text="{Binding Status}" IsEnabled="False"/>
+            </StackPanel>
+            <Border  Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="6" Grid.RowSpan="3" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <ItemsControl ItemsSource="{Binding Cells}" Height="{Binding Height}" Width="{Binding Width}" >
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <Canvas />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemContainerStyle>
+                        <Style TargetType="ContentPresenter">
+                            <Setter Property="Canvas.Left" Value="{Binding X}"/>
+                            <Setter Property="Canvas.Top"  Value="{Binding Y}"/>
+                        </Style>
+                    </ItemsControl.ItemContainerStyle>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Rectangle Width="{Binding Source={x:Static local:ViewModelCells.RatioOfCellToCanvas}}" 
+                                       Height="{Binding Source={x:Static local:ViewModelCells.RatioOfCellToCanvas}}" 
+                                       Stroke="Gray"
+                                       StrokeThickness="0.5"
+                                       Margin="1"
+                                       Fill="{Binding ColourStr}">
+                                <Rectangle.InputBindings>
+                                    <MouseBinding x:Name="Toggle" Gesture="LeftClick" Command="{Binding ToggleCmd}" />
+                                </Rectangle.InputBindings>
+                            </Rectangle>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </Border>
+        </Grid>
+    </Border>
+</Window>

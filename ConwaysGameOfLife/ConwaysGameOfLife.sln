@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConwaysGameOfLife", "ConwaysGameOfLife.csproj", "{AD418243-9A8E-4491-B3CB-F898DEF7CCF5}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "AptusLiteConwaysGameOfLifeSetup", "..\AptusLiteConwaysGameOfLifeSetup\AptusLiteConwaysGameOfLifeSetup.vdproj", "{FD4E8D9D-03A5-4431-881D-D8A97A6AA0CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD418243-9A8E-4491-B3CB-F898DEF7CCF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD418243-9A8E-4491-B3CB-F898DEF7CCF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD418243-9A8E-4491-B3CB-F898DEF7CCF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD418243-9A8E-4491-B3CB-F898DEF7CCF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD4E8D9D-03A5-4431-881D-D8A97A6AA0CA}.Debug|Any CPU.ActiveCfg = Debug
+		{FD4E8D9D-03A5-4431-881D-D8A97A6AA0CA}.Release|Any CPU.ActiveCfg = Release
+		{FD4E8D9D-03A5-4431-881D-D8A97A6AA0CA}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {124EFC84-22F0-4E60-A5C5-02928445C095}
+	EndGlobalSection
+EndGlobal
