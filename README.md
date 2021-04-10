@@ -13,3 +13,10 @@ See https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life for more information.
 See https://en.wikipedia.org/wiki/John_Horton_Conway also for more information about the mathematician.
 
 *** See https://www.youtube.com/watch?v=UCHKrGd1GOA&ab_channel=AptusLite  for video of Game being played.
+
+For Developers:
+ - ConwaysGameOfLife proj contains the source code
+ - AptusLiteConwaysGameOfLifeSetup proj contains the installation code
+ 
+ Other
+  - ConwaysGameOfLifeSetupIntalltionFiles contains the Windows Installer file to install the program to your PC.
