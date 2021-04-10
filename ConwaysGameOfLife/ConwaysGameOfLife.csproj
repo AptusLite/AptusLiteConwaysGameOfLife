@@ -11,6 +11,7 @@
     <Description>AptusLite - ConwaysGameOfLife</Description>
     <PackageLicenseFile>gpl-3.0.txt</PackageLicenseFile>
     <AssemblyName>AptusLiteConwaysGameOfLife</AssemblyName>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>

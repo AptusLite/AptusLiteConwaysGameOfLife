@@ -15,13 +15,19 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_41EE56EDCF84455DB0E45373C2F8E8D0"
+        "MsmKey" = "8:_3F9E4966550D4A2491298BE4D5D9ABB9"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_5746346B0CB64C718F5A510D6EABC8DE"
+        "MsmKey" = "8:_512260DC3A7B43ABB23E8DF7010E92C6"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_67EA0349B7CE4F348C7E8B1C4AE74A6E"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -33,32 +39,32 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_69BA269051E24F849C7CECAC4CDDF0AC"
+        "MsmKey" = "8:_9AE8BEE6F2C645CC811FF8A959E1EFE1"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_7710724F210D4C1F86A892AC3655819F"
+        "MsmKey" = "8:_9E0C4D04356140D8886E9D70CB44D64C"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_DB2016AB61804AC2A73A7D320EE20182"
+        "MsmKey" = "8:_F1772BA717B0465982BA431BE0226A38"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_FC18FA782CC74E0E88E923B59CC48848"
+        "MsmKey" = "8:_FB8D1188DB534DB7AFB090274E118E3B"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_DB2016AB61804AC2A73A7D320EE20182"
+        "OwnerKey" = "8:_FB8D1188DB534DB7AFB090274E118E3B"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -86,6 +92,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -158,7 +172,7 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_41EE56EDCF84455DB0E45373C2F8E8D0"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_512260DC3A7B43ABB23E8DF7010E92C6"
             {
             "SourcePath" = "8:..\\ConwaysGameOfLife\\bin\\Release\\net5.0-windows\\AptusLiteConwaysGameOfLife.runtimeconfig.json"
             "TargetName" = "8:AptusLiteConwaysGameOfLife.runtimeconfig.json"
@@ -178,10 +192,10 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5746346B0CB64C718F5A510D6EABC8DE"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_67EA0349B7CE4F348C7E8B1C4AE74A6E"
             {
-            "SourcePath" = "8:..\\ConwaysGameOfLife\\bin\\Release\\net5.0-windows\\AptusLiteConwaysGameOfLife.exe"
-            "TargetName" = "8:AptusLiteConwaysGameOfLife.exe"
+            "SourcePath" = "8:..\\ConwaysGameOfLife\\bin\\Release\\net5.0-windows\\AptusLiteConwaysGameOfLife.dll.config"
+            "TargetName" = "8:AptusLiteConwaysGameOfLife.dll.config"
             "Tag" = "8:"
             "Folder" = "8:_084DF6C2CEA54522A51CB8BB68481C71"
             "Condition" = "8:"
@@ -218,10 +232,10 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_69BA269051E24F849C7CECAC4CDDF0AC"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9AE8BEE6F2C645CC811FF8A959E1EFE1"
             {
-            "SourcePath" = "8:..\\ConwaysGameOfLife\\bin\\Release\\net5.0-windows\\AptusLiteConwaysGameOfLife.dll.config"
-            "TargetName" = "8:AptusLiteConwaysGameOfLife.dll.config"
+            "SourcePath" = "8:..\\License.rtf"
+            "TargetName" = "8:License.rtf"
             "Tag" = "8:"
             "Folder" = "8:_084DF6C2CEA54522A51CB8BB68481C71"
             "Condition" = "8:"
@@ -238,14 +252,54 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_DB2016AB61804AC2A73A7D320EE20182"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9E0C4D04356140D8886E9D70CB44D64C"
+            {
+            "SourcePath" = "8:..\\ConwaysGameOfLife\\bin\\Release\\net5.0-windows\\AptusLiteConwaysGameOfLife.exe"
+            "TargetName" = "8:AptusLiteConwaysGameOfLife.exe"
+            "Tag" = "8:"
+            "Folder" = "8:_084DF6C2CEA54522A51CB8BB68481C71"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F1772BA717B0465982BA431BE0226A38"
+            {
+            "SourcePath" = "8:..\\ConwaysGameOfLife\\bin\\Release\\net5.0-windows\\AptusLiteConwaysGameOfLife.deps.json"
+            "TargetName" = "8:AptusLiteConwaysGameOfLife.deps.json"
+            "Tag" = "8:"
+            "Folder" = "8:_084DF6C2CEA54522A51CB8BB68481C71"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_FB8D1188DB534DB7AFB090274E118E3B"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:AptusLiteConwaysGameOfLife, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_DB2016AB61804AC2A73A7D320EE20182"
+                    "_FB8D1188DB534DB7AFB090274E118E3B"
                     {
                     "Name" = "8:AptusLiteConwaysGameOfLife.dll"
                     "Attributes" = "3:512"
@@ -253,26 +307,6 @@
                 }
             "SourcePath" = "8:..\\ConwaysGameOfLife\\bin\\Release\\net5.0-windows\\AptusLiteConwaysGameOfLife.dll"
             "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_084DF6C2CEA54522A51CB8BB68481C71"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FC18FA782CC74E0E88E923B59CC48848"
-            {
-            "SourcePath" = "8:..\\ConwaysGameOfLife\\bin\\Release\\net5.0-windows\\AptusLiteConwaysGameOfLife.deps.json"
-            "TargetName" = "8:AptusLiteConwaysGameOfLife.deps.json"
             "Tag" = "8:"
             "Folder" = "8:_084DF6C2CEA54522A51CB8BB68481C71"
             "Condition" = "8:"
@@ -346,7 +380,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:AptusLite - Conway's Game of Life"
         "ProductCode" = "8:{FDB7E931-A42A-4F80-B626-BB8FAD69BC00}"
-        "PackageCode" = "8:{3B0D52EC-F9EC-4A3C-B53D-6831BC1185CC}"
+        "PackageCode" = "8:{48EDA8FF-F126-429E-9566-D3EFD5B6F253}"
         "UpgradeCode" = "8:{247196EB-A0D9-44C1-B1F0-8D6460E2A6CD}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -466,7 +500,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_096434C9EF064AB1AEE779799FBB9157"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_4D5765764DE045F9849ED3F18B8EF495"
             {
             "Name" = "8:AptusLite - Conway's Game of Life"
             "Arguments" = "8:"
@@ -474,13 +508,13 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_5746346B0CB64C718F5A510D6EABC8DE"
-            "Folder" = "8:_084DF6C2CEA54522A51CB8BB68481C71"
+            "Target" = "8:_9E0C4D04356140D8886E9D70CB44D64C"
+            "Folder" = "8:_0C0912AFDFFE469DA2B56511F756CEF4"
             "WorkingFolder" = "8:_084DF6C2CEA54522A51CB8BB68481C71"
             "Icon" = "8:_695B42698412499EAE6DEC1C381FEEDA"
             "Feature" = "8:"
             }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_2B4741625B11404D98AA4CCBED73C7C5"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_A9DCB36A27AB48329C119CD9658FA6A1"
             {
             "Name" = "8:AptusLite - Conway's Game of Life"
             "Arguments" = "8:"
@@ -488,13 +522,13 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_5746346B0CB64C718F5A510D6EABC8DE"
+            "Target" = "8:_9E0C4D04356140D8886E9D70CB44D64C"
             "Folder" = "8:_E37B54A25FF74F62937D1EE193BCC464"
             "WorkingFolder" = "8:_084DF6C2CEA54522A51CB8BB68481C71"
             "Icon" = "8:_695B42698412499EAE6DEC1C381FEEDA"
             "Feature" = "8:"
             }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_CBD3068110114167B5082C5958B59437"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_B0071D54BA614923A5C7EDE8405B4DB2"
             {
             "Name" = "8:AptusLite - Conway's Game of Life"
             "Arguments" = "8:"
@@ -502,8 +536,8 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_5746346B0CB64C718F5A510D6EABC8DE"
-            "Folder" = "8:_0C0912AFDFFE469DA2B56511F756CEF4"
+            "Target" = "8:_9E0C4D04356140D8886E9D70CB44D64C"
+            "Folder" = "8:_084DF6C2CEA54522A51CB8BB68481C71"
             "WorkingFolder" = "8:_084DF6C2CEA54522A51CB8BB68481C71"
             "Icon" = "8:_695B42698412499EAE6DEC1C381FEEDA"
             "Feature" = "8:"
@@ -654,6 +688,53 @@
                             }
                         }
                     }
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_E48D33E1EB364257BE19605C181665CA"
+                    {
+                    "Sequence" = "3:110"
+                    "DisplayName" = "8:License Agreement"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminLicenseDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "EulaText"
+                            {
+                            "Name" = "8:EulaText"
+                            "DisplayName" = "8:#1008"
+                            "Description" = "8:#1108"
+                            "Type" = "3:6"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:2"
+                            "Value" = "8:_9AE8BEE6F2C645CC811FF8A959E1EFE1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "Sunken"
+                            {
+                            "Name" = "8:Sunken"
+                            "DisplayName" = "8:#1007"
+                            "Description" = "8:#1107"
+                            "Type" = "3:5"
+                            "ContextData" = "8:4;True=4;False=0"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:0"
+                            "Value" = "3:4"
+                            "DefaultValue" = "3:4"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
                 }
             }
             "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_65D41D92B4BD4FC88A1A5E34A13248E8"
@@ -751,6 +832,53 @@
             "Attributes" = "3:1"
                 "Dialogs"
                 {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_093349A97C0C4DA98BF4293B4A2D1D36"
+                    {
+                    "Sequence" = "3:110"
+                    "DisplayName" = "8:License Agreement"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdLicenseDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "EulaText"
+                            {
+                            "Name" = "8:EulaText"
+                            "DisplayName" = "8:#1008"
+                            "Description" = "8:#1108"
+                            "Type" = "3:6"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:2"
+                            "Value" = "8:_9AE8BEE6F2C645CC811FF8A959E1EFE1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "Sunken"
+                            {
+                            "Name" = "8:Sunken"
+                            "DisplayName" = "8:#1007"
+                            "Description" = "8:#1107"
+                            "Type" = "3:5"
+                            "ContextData" = "8:4;True=4;False=0"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:0"
+                            "Value" = "3:4"
+                            "DefaultValue" = "3:4"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_8C4B2A5FAF0C42018152670D92D37DFD"
                     {
                     "Sequence" = "3:100"
@@ -907,7 +1035,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_7710724F210D4C1F86A892AC3655819F"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_3F9E4966550D4A2491298BE4D5D9ABB9"
             {
             "SourcePath" = "8:..\\ConwaysGameOfLife\\obj\\Release\\net5.0-windows\\AptusLiteConwaysGameOfLife.dll"
             "TargetName" = "8:"
